@@ -8,7 +8,7 @@ const Component1 = ({components1, deleteRecord}) => {
 
     // if condition
     const component1List = components1.map(component1 =>{
-       if(component1.age > 20){ 
+    //    if(component1.age > 20){ 
             return (
                     <div className="component1" key={ component1.id }>
                         <div>Name:{component1.name }</div>
@@ -17,7 +17,7 @@ const Component1 = ({components1, deleteRecord}) => {
                         <button onClick={ ()=>{deleteRecord(component1.id)} }>Delete</button>
                     </div> 
             )
-        }else{return null}    
+        // }else{return null}    
     })
 
     // 2nd condition
